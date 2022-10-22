@@ -19,4 +19,11 @@ for (var i = 0; i < file_preview_elements.length; i++) {
     }
 }
 
+// add line wrapping to user output text
+const user_output_elements = document.getElementsByClassName('user-output');
+for (var i = 0; i < user_output_elements.length; i++) {
+    var user_output_element = user_output_elements[i];
+    user_output_element.style['white-space'] = "pre-line";
+}
+
 hljs.highlightAll();
