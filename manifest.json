@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "prairielean_expander",
+    "version": "1.0",
+    "description": "Expands Prairielearn File Preview",
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": [
+                "https://ca.prairielearn.com/pl/*/instance_question/*"
+            ]
+        }
+    ]
+}
