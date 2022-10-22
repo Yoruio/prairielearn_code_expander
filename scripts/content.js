@@ -16,13 +16,13 @@ file_preview.classList.add('show');
 file_preview.classList.remove('file-preview');
 
 if (content_div) {
-    content_div.classList.remove('container');
+    content_div.style['max-width'] = "100vw";
 }
 
 var code = file_preview.querySelector('code');
 if (code) {
-    code.style.background="none";
-    code.style.border="none";
+    code.style.background = "none";
+    code.style.border = "none";
 }
 
 hljs.highlightAll();
