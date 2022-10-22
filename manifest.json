@@ -5,7 +5,13 @@
     "description": "Expands Prairielearn File Preview",
     "content_scripts": [
         {
-            "js": ["scripts/content.js"],
+            "js": [
+                "highlightjs/highlight.min.js",
+                "scripts/content.js"
+            ],
+            "css": [
+                "highlightjs/styles/github-dark.min.css"
+            ],
             "matches": [
                 "https://ca.prairielearn.com/pl/*/instance_question/*"
             ]

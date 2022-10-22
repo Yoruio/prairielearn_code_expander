@@ -12,4 +12,5 @@ if (file_preview) {
         code.style.background="none";
         code.style.border="none";
     }
+    hljs.highlightAll();
 }
